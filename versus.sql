@@ -18,7 +18,7 @@ primary key (id)
 create table platform(
 id int,
 name varchar(255),
-price decimal
+price decimal,
 primary key(id)
 );
 
