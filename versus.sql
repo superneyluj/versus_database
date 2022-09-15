@@ -60,8 +60,8 @@ id_platform int,
 id_user int,
 subscription_date date,
 payment_type varchar(1),
-foreign key (id_platform) references(platform),
-foreign key (id_user) references(utilisateur),
+--foreign key (id_platform) references(platform),
+--foreign key (id_user) references(utilisateur),
 primary key (id)
 );
 
@@ -75,8 +75,8 @@ device varchar(255),
 rate int check (rate < 10),
 device varchar(255),
 primary key (id),
-foreign key (id_movie) references(movie),
-foreign key (id_user) references(utilisateur)
+--foreign key (id_movie) references(movie),
+--foreign key (id_user) references(utilisateur)
 );
 
 create table tv_show_viewing(
@@ -90,8 +90,8 @@ rate int check (rate < 10),
 season_number int,
 epsiode_number int,
 primary key (id),
-foreign key (id_tv_show) references(tv_show),
-foreign key (id_user) references(utilisateur)
+--foreign key (id_tv_show) references(tv_show),
+--foreign key (id_user) references(utilisateur)
 );
 
 create table movie_disponibility(
@@ -99,8 +99,8 @@ id int ,
 id_movie int,
 id_platform int,
 primary key (id),
-foreign key (id_movie) references (id_movie),
-foreign key (id_platform) references (platform)
+--foreign key (id_movie) references (id_movie),
+--foreign key (id_platform) references (platform)
 );
 
 create table tv_show_disponibility(
@@ -108,8 +108,8 @@ id int,
 id_tv_show int,
 id_platform int,
 primary key (id),
-foreign key(id_tv_show) references(tv_show),
-foreign key (id_platform) references (platform)
+--foreign key(id_tv_show) references(tv_show),
+--foreign key (id_platform) references (platform)
 );
 
 create table play_in_movie(
@@ -117,8 +117,8 @@ id int,
 id_movie int,
 id_platform int,
 primary key (id),
-foreign key (id_movie) references (movie),
-foreign key (id_platform) references(platform)
+--foreign key (id_movie) references (movie),
+--foreign key (id_platform) references(platform)
 );
 
 create table play_in_tv_show(
@@ -126,8 +126,8 @@ id int,
 id_tv_show int,
 id_platform int,
 primary key (id),
-foreign key (id_tv_show) references(tv_show),
-foreign key (id_platform) references (platform)
+--foreign key (id_tv_show) references(tv_show),
+--foreign key (id_platform) references (platform)
 );
 
 
