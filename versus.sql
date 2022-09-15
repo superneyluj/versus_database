@@ -19,7 +19,7 @@ create table platform(
 id int,
 name varchar(255),
 price decimal
-primary key(id),
+primary key(id)
 );
 
 create table movie(
@@ -41,7 +41,7 @@ realisator_name varchar(255),
 realisator_first_name varchar(255),
 synopsis varchar(255),
 category varchar(255),
-primary key (id),
+primary key (id)
 );
 
 create table actor(
