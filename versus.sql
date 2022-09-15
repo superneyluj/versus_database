@@ -58,7 +58,7 @@ create table subscription(
 id int,
 id_platform int,
 id_user int,
-date date,
+subscription_date date,
 payment_type varchar(1),
 foreign key (id_platform) references(platform),
 foreign key (id_user) references(utilisateur),
