@@ -59,7 +59,7 @@ id int,
 id_platform int,
 id_user int,
 date date,
-payment_type varchar(1) enum ('cb','paypal','mastercard','visa','american express')
+payment_type varchar(1),
 foreign key (id_platform) references(platform),
 foreign key (id_user) references(utilisateur),
 primary key (id)
