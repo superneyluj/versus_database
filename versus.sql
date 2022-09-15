@@ -1,5 +1,5 @@
 -- création de la base de donnée de versus v1.0
-
+drop database versus;
 create database versus;
 use versus; 
 create table utilisateur(
