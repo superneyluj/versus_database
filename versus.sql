@@ -49,7 +49,7 @@ create table actor(
 id int,
 name varchar(255),
 first_name varchar(255),
-age int check (age < 130),
+age varchar(3),
 gender char(1),
 nationality varchar(255),
 primary key (id)
