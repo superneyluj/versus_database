@@ -2,6 +2,7 @@
 drop database versus;
 create database versus;
 use versus; 
+
 create table utilisateur(
 id int,
 user_name varchar(30),
@@ -54,15 +55,16 @@ nationality varchar(255),
 primary key (id)
 );
 
+   
 create table subscription(
 id int,
 id_platform int,
 id_user int,
 subscription_date date,
-payment_type varchar(1),
---foreign key (id_platform) references(platform),
---foreign key (id_user) references(utilisateur),
-primary key (id)
+payment_type varchar(30),
+primary key (id),
+foreign key (id_platform) references platform(id),
+foreign key (id_user) references utilisateur(id)
 );
 
 create table movie_viewing(
@@ -72,11 +74,10 @@ id_user int,
 duration time,
 starting_time time,
 device varchar(255),
-rate int check (rate < 10),
-device varchar(255),
+rate int,
 primary key (id),
---foreign key (id_movie) references(movie),
---foreign key (id_user) references(utilisateur)
+foreign key (id_movie) references movie(id),
+foreign key (id_user) references utilisateur(id)
 );
 
 create table tv_show_viewing(
@@ -86,21 +87,21 @@ id_user int,
 duration time,
 starting_time time,
 device varchar(255),
-rate int check (rate < 10),
+rate int,
 season_number int,
 epsiode_number int,
 primary key (id),
---foreign key (id_tv_show) references(tv_show),
---foreign key (id_user) references(utilisateur)
+foreign key (id_tv_show) references tv_show(id),
+foreign key (id_user) references utilisateur(id)
 );
 
 create table movie_disponibility(
-id int ,
+id int,
 id_movie int,
 id_platform int,
 primary key (id),
---foreign key (id_movie) references (id_movie),
---foreign key (id_platform) references (platform)
+foreign key (id_movie) references movie (id),
+foreign key (id_platform) references platform(id)
 );
 
 create table tv_show_disponibility(
@@ -108,8 +109,8 @@ id int,
 id_tv_show int,
 id_platform int,
 primary key (id),
---foreign key(id_tv_show) references(tv_show),
---foreign key (id_platform) references (platform)
+foreign key(id_tv_show) references tv_show(id),
+foreign key (id_platform) references platform(id)
 );
 
 create table play_in_movie(
@@ -117,8 +118,8 @@ id int,
 id_movie int,
 id_platform int,
 primary key (id),
---foreign key (id_movie) references (movie),
---foreign key (id_platform) references(platform)
+foreign key (id_movie) references movie(id),
+foreign key (id_platform) references platform(id)
 );
 
 create table play_in_tv_show(
@@ -126,8 +127,8 @@ id int,
 id_tv_show int,
 id_platform int,
 primary key (id),
---foreign key (id_tv_show) references(tv_show),
---foreign key (id_platform) references (platform)
+foreign key (id_tv_show) references tv_show(id),
+foreign key (id_platform) references platform(id)
 );
 
 
