@@ -37,7 +37,6 @@ primary key (id)
 create table tv_show(
 id int ,
 name varchar(255),
-duration time,
 realisator_name varchar(255),
 realisator_first_name varchar(255),
 synopsis varchar(255),
