@@ -37,7 +37,6 @@ primary key (id)
 create table tv_show(
 id int ,
 name varchar(255),
-duration time,
 realisator_name varchar(255),
 realisator_first_name varchar(255),
 synopsis varchar(255),
@@ -116,19 +115,19 @@ foreign key (id_platform) references platform(id)
 create table play_in_movie(
 id int,
 id_movie int,
-id_platform int,
+id_actor int,
 primary key (id),
 foreign key (id_movie) references movie(id),
-foreign key (id_platform) references platform(id)
+foreign key (id_actor) references actor(id)
 );
 
 create table play_in_tv_show(
 id int,
 id_tv_show int,
-id_platform int,
+id_actor int,
 primary key (id),
 foreign key (id_tv_show) references tv_show(id),
-foreign key (id_platform) references platform(id)
+foreign key (id_actor) references actor(id)
 );
 
 
