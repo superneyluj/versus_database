@@ -1,37 +1,38 @@
+USE versus;
 INSERT INTO utilisateur
-VALUES( 1,'sicot','julien','M','sicot.julien@polytech.com','1999-08-19','sicot.julien','XTZ02uvk','France');
+VALUES( 1,'sicot','julien','M','sicot.julien@polytech.com','2001-08-02','sicot.julien','QNQ30kqp','France');
 INSERT INTO utilisateur
-VALUES( 2,'jorand','antoine','M','jorand.antoine@polytech.com','2003-04-07','jorand.antoine','XSE81xun','France');
+VALUES( 2,'jorand','antoine','M','jorand.antoine@polytech.com','1995-09-30','jorand.antoine','NDS66aeo','France');
 INSERT INTO utilisateur
-VALUES( 3,'martino','ugo','M','martino.ugo@polytech.com','1998-04-10','martino.ugo','ZPU82lyi','France');
+VALUES( 3,'martino','ugo','M','martino.ugo@polytech.com','2001-10-02','martino.ugo','RCP31uib','France');
 INSERT INTO utilisateur
-VALUES( 4,'prevoteau','sullivan','M','prevoteau.sullivan@polytech.com','2000-07-29','prevoteau.sullivan','ICQ41fqr','France');
+VALUES( 4,'prevoteau','sullivan','M','prevoteau.sullivan@polytech.com','1998-08-10','prevoteau.sullivan','QPJ29jlz','France');
 INSERT INTO utilisateur
-VALUES( 5,'allouis','ambre','F','allouis.ambre@polytech.com','2004-06-17','allouis.ambre','ZQH60tqq','France');
+VALUES( 5,'allouis','ambre','F','allouis.ambre@polytech.com','2002-11-02','allouis.ambre','RTA75oit','France');
 INSERT INTO utilisateur
-VALUES( 6,'bensalem','ilyes','M','bensalem.ilyes@polytech.com','1998-08-03','bensalem.ilyes','OSR60tvo','France');
+VALUES( 6,'bensalem','ilyes','M','bensalem.ilyes@polytech.com','2000-10-14','bensalem.ilyes','GAI36uzy','France');
 INSERT INTO utilisateur
-VALUES( 7,'bousquet','alexandre','M','bousquet.alexandre@polytech.com','1999-03-18','bousquet.alexandre','BCK09oxn','France');
+VALUES( 7,'bousquet','alexandre','M','bousquet.alexandre@polytech.com','1998-12-31','bousquet.alexandre','GMB13mjp','France');
 INSERT INTO utilisateur
-VALUES( 8,'canella','clément','M','canella.clément@polytech.com','2004-11-22','canella.clément','URD09tgz','France');
+VALUES( 8,'canella','clément','M','canella.clément@polytech.com','2003-11-21','canella.clément','AJE99vuc','France');
 INSERT INTO utilisateur
-VALUES( 9,'frantzen','maxime','M','frantzen.maxime@polytech.com','2000-05-17','frantzen.maxime','HNS14swa','France');
+VALUES( 9,'frantzen','maxime','M','frantzen.maxime@polytech.com','1997-07-28','frantzen.maxime','GVL85cup','France');
 INSERT INTO utilisateur
-VALUES( 10,'grondin','clément','M','grondin.clément@polytech.com','1998-01-14','grondin.clément','BFB68kul','France');
+VALUES( 10,'grondin','clément','M','grondin.clément@polytech.com','1995-04-09','grondin.clément','DDW27kyd','France');
 INSERT INTO utilisateur
-VALUES( 11,'guillaume','solène','F','guillaume.solène@polytech.com','1996-03-22','guillaume.solène','KIE57whu','France');
+VALUES( 11,'guillaume','solène','F','guillaume.solène@polytech.com','2001-06-15','guillaume.solène','DNQ58cry','France');
 INSERT INTO utilisateur
-VALUES( 12,'lecuivre','antoine','M','lecuivre.antoine@polytech.com','2000-03-25','lecuivre.antoine','PUU81bbn','France');
+VALUES( 12,'lecuivre','antoine','M','lecuivre.antoine@polytech.com','1995-05-10','lecuivre.antoine','VUS01wno','France');
 INSERT INTO utilisateur
-VALUES( 13,'moreau','jules','M','moreau.jules@polytech.com','1995-08-28','moreau.jules','VVG36ggr','France');
+VALUES( 13,'moreau','jules','M','moreau.jules@polytech.com','1998-09-16','moreau.jules','GAW15doc','France');
 INSERT INTO utilisateur
-VALUES( 14,'rguibi','taha','M','rguibi.taha@polytech.com','1995-03-15','rguibi.taha','LST45tod','France');
+VALUES( 14,'rguibi','taha','M','rguibi.taha@polytech.com','2002-10-02','rguibi.taha','OGZ40izj','France');
 INSERT INTO utilisateur
-VALUES( 15,'scanzalupi','alexandre','M','scanzalupi.alexandre@polytech.com','2004-07-12','scanzalupi.alexandre','DBN01cff','France');
+VALUES( 15,'scanzalupi','alexandre','M','scanzalupi.alexandre@polytech.com','2002-08-26','scanzalupi.alexandre','EQV52uqx','France');
 INSERT INTO utilisateur
-VALUES( 16,'benzaouia','oussama','M','benzaouia.oussama@polytech.com','2000-08-27','benzaouia.oussama','DSK28tla','France');
+VALUES( 16,'benzaouia','oussama','M','benzaouia.oussama@polytech.com','1996-07-16','benzaouia.oussama','PID49dsv','France');
 INSERT INTO utilisateur
-VALUES( 17,'robert','sylvain','M','robert.sylvain@polytech.com','2000-08-30','robert.sylvain','DZQ67aom','France');
+VALUES( 17,'robert','sylvain','M','robert.sylvain@polytech.com','2003-12-23','robert.sylvain','WNG10vcd','France');
 
 INSERT INTO movie
 VALUES( 1,'intersellar','02:49:00','christopher ','nolan','un trou noir','sci-fi');
@@ -132,96 +133,96 @@ INSERT INTO platform
 VALUES( 7,'salto','6.99');
 
 INSERT INTO subscription
-VALUES( 1,1,16,'2020-08-24 21:13:07','mastercard');
+VALUES( 1,6,4,'2020-11-27 00:28:03','mastercard');
 INSERT INTO subscription
-VALUES( 2,3,8,'2020-03-05 01:16:27','paypal');
+VALUES( 2,7,7,'2021-02-11 21:37:09','paypal');
 INSERT INTO subscription
-VALUES( 3,2,7,'2021-04-26 07:36:44','visa');
+VALUES( 3,7,3,'2022-05-28 16:53:24','visa');
 INSERT INTO subscription
-VALUES( 4,4,9,'2021-10-11 06:30:38','mastercard');
+VALUES( 4,6,6,'2022-02-23 07:12:18','mastercard');
 INSERT INTO subscription
-VALUES( 5,7,3,'2021-07-10 20:54:59','paypal');
+VALUES( 5,6,3,'2020-04-14 20:21:28','paypal');
 INSERT INTO subscription
-VALUES( 6,3,1,'2020-10-04 04:23:00','bitcoin');
+VALUES( 6,1,4,'2021-11-13 20:23:13','bitcoin');
 INSERT INTO subscription
-VALUES( 7,1,3,'2021-05-10 21:16:34','paypal');
+VALUES( 7,7,6,'2022-02-19 20:08:23','paypal');
 INSERT INTO subscription
-VALUES( 8,1,9,'2020-11-11 11:31:01','mastercard');
+VALUES( 8,7,2,'2021-12-08 16:44:01','mastercard');
 INSERT INTO subscription
-VALUES( 9,1,10,'2021-04-21 10:34:28','bitcoin');
+VALUES( 9,2,3,'2020-08-24 22:21:54','bitcoin');
 INSERT INTO subscription
-VALUES( 10,2,7,'2021-05-24 16:36:21','paypal');
+VALUES( 10,7,4,'2022-01-13 07:43:26','paypal');
 
 INSERT INTO tv_show_viewing
-VALUES( 1,10,6,'00:03:02','2022-04-15 08:20:18','tablette',53,3,8);
+VALUES( 1,3,11,'00:26:42','2021-06-09 14:58:35','tablette',71,3,2);
 INSERT INTO tv_show_viewing
-VALUES( 2,10,11,'00:15:10','2021-11-15 22:42:22','téléphone',49,4,4);
+VALUES( 2,2,8,'00:35:37','2020-04-16 06:31:43','téléphone',87,3,3);
 INSERT INTO tv_show_viewing
-VALUES( 3,1,11,'00:00:27','2021-10-03 04:37:00','tv',60,4,9);
+VALUES( 3,10,9,'00:37:50','2020-07-19 03:40:29','tv',52,1,11);
 INSERT INTO tv_show_viewing
-VALUES( 4,10,15,'00:40:05','2022-05-17 18:18:46','tablette',24,1,10);
+VALUES( 4,7,12,'00:40:22','2020-02-26 07:58:17','tablette',36,1,12);
 INSERT INTO tv_show_viewing
-VALUES( 5,10,7,'00:00:57','2022-02-26 01:29:14','tv',63,5,3);
+VALUES( 5,3,7,'00:24:18','2022-02-04 21:49:53','tv',55,2,1);
 INSERT INTO tv_show_viewing
-VALUES( 6,4,11,'00:01:12','2022-07-25 20:39:40','tv',23,5,5);
+VALUES( 6,6,4,'00:24:54','2022-07-26 01:02:35','tv',27,2,11);
 INSERT INTO tv_show_viewing
-VALUES( 7,9,9,'00:09:01','2020-05-13 16:12:23','tv',10,3,1);
+VALUES( 7,9,9,'00:23:36','2021-05-16 12:17:03','tv',27,5,2);
 INSERT INTO tv_show_viewing
-VALUES( 8,4,9,'00:22:35','2020-04-11 22:26:41','tablette',98,2,8);
+VALUES( 8,6,1,'00:09:08','2021-09-19 07:02:15','tablette',81,3,6);
 INSERT INTO tv_show_viewing
-VALUES( 9,1,9,'00:21:51','2022-05-16 08:08:56','tablette',25,5,11);
+VALUES( 9,5,10,'00:05:33','2022-02-23 02:55:37','tablette',75,4,2);
 INSERT INTO tv_show_viewing
-VALUES( 10,2,6,'00:06:58','2022-07-14 19:14:36','tv',81,5,5);
+VALUES( 10,2,10,'00:18:05','2021-03-15 23:39:55','tv',68,3,11);
 INSERT INTO tv_show_viewing
-VALUES( 11,2,17,'00:36:22','2020-08-08 16:11:09','téléphone',19,2,12);
+VALUES( 11,10,13,'00:34:11','2021-08-24 22:22:43','téléphone',8,5,4);
 INSERT INTO tv_show_viewing
-VALUES( 12,7,12,'00:23:57','2021-01-02 03:18:38','tv',79,1,2);
+VALUES( 12,9,10,'00:12:43','2022-08-20 19:37:10','tv',68,3,10);
 
 INSERT INTO movie_viewing
-VALUES( 1,4,13,'05:12:09','2021-08-27 07:29:23','tablette',82);
+VALUES( 1,3,13,'05:01:42','2020-06-04 06:09:19','tablette',0);
 INSERT INTO movie_viewing
-VALUES( 2,9,16,'02:30:51','2021-09-18 22:23:09','téléphone',38);
+VALUES( 2,8,2,'02:37:09','2020-10-26 12:18:46','téléphone',76);
 INSERT INTO movie_viewing
-VALUES( 3,6,7,'03:13:11','2021-09-27 20:15:14','tv',55);
+VALUES( 3,5,15,'05:05:49','2020-08-20 04:57:28','tv',93);
 INSERT INTO movie_viewing
-VALUES( 4,4,2,'04:48:47','2020-11-18 03:00:31','tablette',87);
+VALUES( 4,7,9,'00:37:36','2020-11-25 08:59:11','tablette',6);
 INSERT INTO movie_viewing
-VALUES( 5,8,17,'03:51:56','2022-02-15 18:31:32','tv',41);
+VALUES( 5,6,16,'04:23:13','2021-01-17 18:38:23','tv',25);
 INSERT INTO movie_viewing
-VALUES( 6,7,12,'01:03:39','2021-02-15 19:00:32','tv',36);
+VALUES( 6,2,14,'01:44:18','2021-05-05 06:54:28','tv',30);
 INSERT INTO movie_viewing
-VALUES( 7,5,6,'03:38:19','2022-07-14 13:33:48','tv',81);
+VALUES( 7,6,12,'06:40:25','2020-08-15 14:44:57','tv',76);
 INSERT INTO movie_viewing
-VALUES( 8,8,16,'00:19:24','2022-02-18 07:24:49','tablette',50);
+VALUES( 8,5,1,'06:08:09','2022-10-15 12:11:46','tablette',74);
 INSERT INTO movie_viewing
-VALUES( 9,7,14,'03:41:02','2021-11-18 14:34:14','tablette',52);
+VALUES( 9,5,15,'03:11:09','2021-12-21 04:04:14','tablette',76);
 INSERT INTO movie_viewing
-VALUES( 10,3,6,'03:08:32','2022-01-20 05:44:29','tv',24);
+VALUES( 10,7,7,'05:12:09','2020-06-10 18:04:56','tv',28);
 INSERT INTO movie_viewing
-VALUES( 11,8,17,'06:18:04','2022-05-04 19:39:56','téléphone',3);
+VALUES( 11,8,9,'01:54:25','2022-07-26 15:38:55','téléphone',59);
 INSERT INTO movie_viewing
-VALUES( 12,7,16,'01:39:42','2020-08-14 05:31:39','tv',69);
+VALUES( 12,2,15,'06:14:25','2021-07-26 08:14:23','tv',81);
 
 INSERT INTO movie_disponibility
-VALUES( 1,1,2);
+VALUES( 1,1,1);
 INSERT INTO movie_disponibility
-VALUES( 2,2,7);
+VALUES( 2,2,1);
 INSERT INTO movie_disponibility
-VALUES( 3,3,4);
+VALUES( 3,3,3);
 INSERT INTO movie_disponibility
-VALUES( 4,4,1);
+VALUES( 4,4,4);
 INSERT INTO movie_disponibility
-VALUES( 5,5,5);
+VALUES( 5,5,2);
 INSERT INTO movie_disponibility
-VALUES( 6,6,2);
+VALUES( 6,6,6);
 INSERT INTO movie_disponibility
-VALUES( 7,7,7);
+VALUES( 7,7,1);
 INSERT INTO movie_disponibility
-VALUES( 8,8,3);
+VALUES( 8,8,2);
 INSERT INTO movie_disponibility
-VALUES( 9,9,5);
+VALUES( 9,9,7);
 INSERT INTO movie_disponibility
-VALUES( 10,10,7);
+VALUES( 10,10,4);
 
 INSERT INTO tv_show_disponibility
 VALUES( 1,1,1);
