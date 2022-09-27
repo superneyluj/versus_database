@@ -7,7 +7,7 @@ create table utilisateur(
 id int,
 user_name varchar(30),
 user_first_name varchar(30),
-gender char(1) check (gender like 'm' or gender like 'f'),
+gender ENUM('M','F'),
 email_addr varchar(50),
 date_of_birth date,
 user_login varchar(255),
@@ -15,6 +15,7 @@ user_password varchar(255),
 country varchar(255),
 primary key (id)
 );
+
 
 create table platform(
 id int,
@@ -129,5 +130,3 @@ primary key (id),
 foreign key (id_tv_show) references tv_show(id),
 foreign key (id_actor) references actor(id)
 );
-
-

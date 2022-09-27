@@ -23,11 +23,6 @@ WHERE category = 'sci-fi' OR category = 'horreur';
 /*renvoie le nombre de films*/
 SELECT COUNT(*) FROM movie;
 
-/*renvoie la date de sub de julien*/
-SELECT subscription_date
-FROM subscription
-WHERE id IN(SELECT id FROM utilisateur WHERE user_first_name = 'julien');
-
 
 /*renvoie le prix moyen des abonnement*/
 SELECT AVG(price)
@@ -37,17 +32,59 @@ FROM platform;
 SELECT *, YEAR(CURDATE()) - YEAR(date_of_birth) AS age FROM utilisateur;
 
 
-/*renvoie les utilisateurs abonné à la platforme netflix (ne fonctionne pas à corriger)*/
-SELECT UTILISATEUR.USER_NAME
+/*renvoie les dates de souscription de l'utilisateur Antoine Jorand*/
+SELECT subscription.subscription_date
+FROM (subscription
+INNER JOIN utilisateur ON subscription.id_user = utilisateur.id)
+WHERE user_name = 'jorand';
+
+
+/*renvoie les noms des gens abonnés à la platforme netflix*/
+SELECT user_name FROM utilisateur
+WHERE id IN
+(
+	SELECT id_user
+	FROM subscription
+	WHERE id_platform in
+	 	(
+	 	 SELECT id FROM platform WHERE name = 'netflix'
+		)
+);
+
+/*autre moyen avec un inner join*/
+SELECT utilisateur.user_name, utilisateur.user_first_name
 FROM((utilisateur 
-INNER JOIN subscription ON platform.id = subscription.id_platform) 
+INNER JOIN subscription ON utilisateur.id = subscription.id_user) 
 INNER JOIN platform ON subscription.id_platform=platform.id)
 WHERE platform.name = 'netflix';
 
 
-SELECT actor.name, actor.first_name
-FROM ((actor
-INNER JOIN play_in_movie ON actor.id = play_in_movie.id_actor)
-INNER JOIN movie ON play_in_movie.id_movie = movie.id)
-WHERE movie.name = 'les affranchis';
+
+/*renvoie les acteurs qui jouent dans les affranchis*/
+SELECT name, first_name FROM actor
+WHERE id IN
+(
+	SELECT id_actor
+	FROM play_in_movie
+	WHERE id_movie IN
+	(
+		SELECT id FROM movie WHERE name = 'les affranchis'
+		)
+);
+
+
+/*renvoie les films dans lequels joue joe pesci*/
+SELECT name FROM movie
+WHERE id IN
+(
+	SELECT id_movie
+	FROM play_in_movie
+	WHERE id_actor IN
+	(
+		SELECT id FROM actor WHERE name = 'joe' AND first_name = 'pesci'
+		)
+);
+
+
+
 
