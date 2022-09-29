@@ -86,5 +86,27 @@ WHERE id IN
 );
 
 
+/*renvoie la plateforme la moins chère*/
+SELECT * FROM platform
+WHERE price = (SELECT MIN(price) FROM platform);
 
 
+/*renvoie les plateformes dont le prix est compris entre 10€ et 20€*/
+SELECT * FROM platform
+where price BETWEEN 10 AND 20;
+
+
+/*changement des alias de la table utilisateur*/
+SELECT user_name AS 'nom',
+user_first_name AS 'prénom',
+gender AS 'genre',
+email_addr AS 'adresse email',
+user_login AS 'login',
+user_password AS 'password',
+country AS 'pays'
+FROM utilisateur;
+
+
+/*renvoie les utilisateurs avec une adresse en @polytech.com*/
+ SELECT * FROM utilisateur
+ WHERE email_addr LIKE "%@polytech.com";
